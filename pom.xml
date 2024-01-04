@@ -51,10 +51,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jetty</artifactId>
         </dependency>
+
+        <!-- Spring Boot Actuator提供了监控和管理Spring Boot应用程序的功能，包括健康检查、监控指标、审计和日志记录等。通过引入这个依赖，可以在应用程序中使用这些功能。 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator</artifactId>
         </dependency>
+
+        <!-- HikariCP是一个高性能的Java连接池，用于管理数据库连接。通过引入这个依赖，你可以在你的项目中使用HikariCP连接池。 -->
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
@@ -107,12 +111,14 @@
             <artifactId>spring-context-support</artifactId>
         </dependency>
 
+        <!-- ehcache是一个开源的Java缓存库，用于提高应用程序的性能和效率。通过添加这个依赖配置，你可以在项目中使用ehcache库的功能。 -->
         <dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache</artifactId>
             <version>2.10.2</version>
         </dependency>
 
+        <!-- kryo库是一个高效的Java对象序列化库，用于将Java对象转化为字节流，以便在网络传输或持久化存储中使用。它可以快速地将对象序列化成紧凑的字节流，并能够高效地将字节流反序列化成原始对象。kryo库具有较低的序列化开销和较小的序列化字节大小，可以在分布式计算、大数据处理和高性能应用领域发挥重要作用。 -->
         <dependency>
             <groupId>com.esotericsoftware</groupId>
             <artifactId>kryo</artifactId>
@@ -147,12 +153,16 @@
             <artifactId>weixin-popular</artifactId>
             <version>2.8.0</version>
         </dependency>
+
+        <!-- org.tuckey:urlrewritefilter这个库通常用于在Java web应用程序中重写URL和处理URL重定向 -->
         <dependency>
             <groupId>org.tuckey</groupId>
             <artifactId>urlrewritefilter</artifactId>
             <version>4.0.3</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+
+        <!-- Lombok库提供的各种注解和工具简化Java开发 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
