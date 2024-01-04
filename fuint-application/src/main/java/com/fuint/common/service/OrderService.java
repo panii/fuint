@@ -81,20 +81,21 @@ public interface OrderService extends IService<MtOrder> {
     /**
      * 取消订单
      *
-     * @param  id 订单ID
+     * @param orderId 订单ID
+     * @param remark 取消备注
      * @return
      * */
-    MtOrder cancelOrder(Integer id, String remark) throws BusinessCheckException;
+    MtOrder cancelOrder(Integer orderId, String remark) throws BusinessCheckException;
 
     /**
      * 根据订单ID删除
      *
-     * @param  id       ID
+     * @param  orderId 订单ID
      * @param  operator 操作人
      * @throws BusinessCheckException
      * @return
      */
-    void deleteOrder(Integer id, String operator) throws BusinessCheckException;
+    void deleteOrder(Integer orderId, String operator) throws BusinessCheckException;
 
     /**
      * 根据订单号获取订单
